@@ -1,3 +1,10 @@
+Scopo analisi
+ - 60% dello stage analisi
+ - analisi == capire cosa vogliono i clienti interni
+ - clienti interni == membri azienda
+ - per capire cosa vogliono dobbiamo conoscerli e capire cosa fanno
+ - per capire cosa vogliono, dobbiamo raccogliere informazioni
+
 intranet aziendale
  - possono accedere solo gli operatori aziendali
  - ci devono essere dentro documenti e file utili
