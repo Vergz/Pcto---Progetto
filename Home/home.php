@@ -57,8 +57,9 @@
 <div style="width:1080px;height:500px;">
 </div>
 <p>-</p>
+ <div class="box">
  <button type="button" class="deposito"><h3><span style="float:left;margin-left:35px;">Modulistica</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
- 
+ <div class="boxdeposito">
  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-interval="false" style="width:100%;">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -126,13 +127,10 @@
     </div>
     </div>
 	
-	
-	<!---------------------------------------------------->	
-	
 
 	  </div>
 	  
-	  
+		<!---------------------------------------------------->	  
 	  
 	  
 	  
@@ -222,14 +220,352 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
-
+</div>
+</div>
  
  
  
- 
+  <div class="box">
  <button type="button" class="deposito"><h3><span style="float:left;margin-left:35px;">Avvisi</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
+ 
+ 
+ 
+  <div class="boxdeposito">
+ <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-interval="false" style="width:100%;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active"  id="slide1">
+	
+	<!---------------------------------------------------->
+	
+	   <div class="album py-5 w-100 d-flex justify-content-center">
+    <div class="container" style="margin-left: 100px;margin-right: 100px;text-align:center;">
+
+      <div class="row row-cols-5 row-cols-sm-5 row-cols-md-5 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+		        <div class="col">
+          <div class="card shadow-sm">
+<!---contenuti-->
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+		        <div class="col">
+          <div class="card shadow-sm">
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+				        <div class="col">
+          <div class="card shadow-sm">
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+				        <div class="col">
+          <div class="card shadow-sm">
+
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+
+		
+    </div>
+    </div>
+    </div>
+	
+
+	  </div>
+	  
+		<!---------------------------------------------------->	  
+	  
+	  
+	  
+	  
+    <div class="carousel-item" id="slide2">
+	  	  
+		  
+	   <div class="album py-5 w-100 d-flex justify-content-center">
+    <div class="container" style="margin-left: 100px;margin-right: 100px;text-align:center;">
+
+      <div class="row row-cols-5 row-cols-sm-5 row-cols-md-5 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+		        <div class="col">
+          <div class="card shadow-sm">
+
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+		        <div class="col">
+          <div class="card shadow-sm">
+
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+				        <div class="col">
+          <div class="card shadow-sm">
+
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+				        <div class="col">
+          <div class="card shadow-sm">
+
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+
+		
+    </div>
+    </div>
+    </div>
+	
+		  
+		 
+    </div>
+
+		
+    </div>
+    </div>
+
+	
+	
+	
+	
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+ 
+ 
+ 
+ <div class="box">
  <button type="button" class="deposito"><h3><span style="float:left;margin-left:35px;">Regolamenti</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
+ 
+  <div class="boxdeposito">
+ <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-interval="false" style="width:100%;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active"  id="slide1">
+	
+	<!---------------------------------------------------->
+	
+	   <div class="album py-5 w-100 d-flex justify-content-center">
+    <div class="container" style="margin-left: 100px;margin-right: 100px;text-align:center;">
+
+      <div class="row row-cols-5 row-cols-sm-5 row-cols-md-5 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+		        <div class="col">
+          <div class="card shadow-sm">
+<!---contenuti-->
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+		        <div class="col">
+          <div class="card shadow-sm">
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+				        <div class="col">
+          <div class="card shadow-sm">
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+				        <div class="col">
+          <div class="card shadow-sm">
+
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+
+		
+    </div>
+    </div>
+    </div>
+	
+
+	  </div>
+	  
+		<!---------------------------------------------------->	  
+	  
+	  
+	  
+	  
+    <div class="carousel-item" id="slide2">
+	  	  
+		  
+	   <div class="album py-5 w-100 d-flex justify-content-center">
+    <div class="container" style="margin-left: 100px;margin-right: 100px;text-align:center;">
+
+      <div class="row row-cols-5 row-cols-sm-5 row-cols-md-5 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+		        <div class="col">
+          <div class="card shadow-sm">
+
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+		        <div class="col">
+          <div class="card shadow-sm">
+
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+				        <div class="col">
+          <div class="card shadow-sm">
+
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+				        <div class="col">
+          <div class="card shadow-sm">
+
+
+            <div class="card-body">
+              <p class="card-text">File</p>
+            </div>
+          </div>
+        </div>
+		
+
+		
+    </div>
+    </div>
+    </div>
+	
+		  
+		 
+    </div>
+
+		
+    </div>
+    </div>
+
+	
+	
+	
+	
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+
+
+
+ 
 
 <?php 
 			$path = "upload";

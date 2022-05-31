@@ -48,6 +48,19 @@ margin-left:190px;
 }
 
 
+.boxdeposito
+{
+	border-style:solid;
+	border-width:3px;
+	border-color:#A0A0A0;
+	border-radius: 0px 0px 10px 10px;
+	width:50%;
+	margin:auto;
+}
+.box
+{
+    margin-bottom:20px;	
+}
 #uscita
 {
 	float:right;
