@@ -66,5 +66,88 @@
   </button>
 </div>
 
+
+
+
+
+<?php 
+			$path = "upload";
+			$files = scandir($path);
+			echo '<div id="files" style="padding:20px">';
+			for($i=0;$i<count($files);$i++){
+				if($files[$i]!="."&&$files[$i]!=".."){
+					echo "<li><a href='".$path."/".$files[$i]."' download><button class='link'>".$files[$i]."</button></a>";
+					echo '<button >CANCELLA FILE</button></li>'; // usa unlink(path) per eliminare un file
+				}
+			}
+			echo "</div>";
+		?>
+		
+		<div id="upload">
+			<form class="form" id="myForm">
+				<input type="file" id="inpFile"><br/>
+				<button type="submit" id="carica" onclick="ricarica()" class="btn btn-primary btn-lg">Carica file</button>
+			</form>
+		</div>
+
+		<script>
+			// Upoload file
+			const myForm = document.getElementById('myForm');
+			const inpFile = document.getElementById('inpFile');
+			console.log(myForm);
+			console.log(inpFile);
+
+			myForm.addEventListener("submit", e => {
+			e.preventDefault();
+
+			const endpoint = "upload.php";
+			const formData = new FormData();
+
+			formData.append("inpFile", inpFile.files[0]);
+
+			fetch(endpoint , {
+				method: "post",
+				body: formData
+			}).catch(console.error);
+			});
+
+			function ricarica(){
+				setTimeout(() => {
+					window.location.reload();
+				}, 250);
+			}
+		</script>
+		<style>
+		#uscita{
+			float:right;
+		}
+		header{
+			background-color:#f1f3f4;
+		}
+		img{
+			padding:40px;
+			padding-left:80px;
+		}
+		#upload{
+			width:400px;
+			height:150px;
+			border-style: solid;
+			padding: 20px;
+			margin: 20px;
+      float:right;
+		}
+		#carica{
+			width:350px;
+		}
+    #files{
+      float:right;
+    }
+		.link{
+			width:200px;
+		}
+		a{
+			text-decoration:none;
+		}
+		</style>
 </body>
 </html>
