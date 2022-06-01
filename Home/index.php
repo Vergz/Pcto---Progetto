@@ -682,7 +682,13 @@ stampafile($indice3,$i3);
 
 
  
-
+<?php 
+  if(isset($_GET["path"])){
+    unlink($_GET["path"]);
+    echo "<script>window.history.pushState('', '', 'index.php');</script>";
+    echo "<script>window.location.reload();</script>";
+  }
+?>
 
 		
 		<div id="upload">
