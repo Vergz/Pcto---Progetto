@@ -1,0 +1,47 @@
+
+header{
+	background-color:white;
+	text-align:center;
+	padding:25px;
+}
+
+footer{
+	background-color:white;
+	text-align:center;
+	padding:25px;
+}
+
+body{
+	background-color:#f1f3f4;
+}
+
+.input{
+	width:40%;
+	margin:auto;
+	margin-top:20px;
+}
+
+.inputbar{
+   	border-radius: 25px 25px 25px 25px;	
+}
+
+h3{
+	margin-top:100px;
+}
+
+.accedi{
+	width:10%;
+}
+
+.cancella{
+	width:10%;
+}
+
+/*body{
+	background-color:#D3D3D3;
+	background-color:#f1f3f4;
+}*/
+
+.blocco1{
+	text-align:center;
+}

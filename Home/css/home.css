@@ -11,6 +11,10 @@ margin:50px;
 margin-left:190px;
 }
 
+#uscita{
+	float:right;
+}
+
 .carousel1 {
     border-radius: 0px 55px 0px 55px;
     overflow: hidden;
