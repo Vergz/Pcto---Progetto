@@ -65,6 +65,20 @@ margin-left:190px;
 {
     margin-bottom:20px;	
 }
+
+.iconafile
+{
+   margin:auto;
+   margin-top:15px;
+   width:60%;   
+   text-align:center;
+}
+.titolodeposito
+{
+	color:#009EE0;
+}
+
+
 #uscita
 {
 	float:right;

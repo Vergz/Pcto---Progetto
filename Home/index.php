@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link href="bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/home.css" rel='stylesheet' type='text/css' title="menù orizzontale">	
+		<script src="js/js_code.js" type="text/javascript"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 	<title>Home</title>
@@ -90,6 +91,7 @@
       <div class="row row-cols-5 row-cols-sm-5 row-cols-md-5 g-3">
         <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $indice=1;
 $i=2;
@@ -103,6 +105,7 @@ stampafile($indice,$i);
 		
 		        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i++;
 stampafile($indice,$i);
@@ -116,6 +119,7 @@ stampafile($indice,$i);
 		
 		        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i++;
 stampafile($indice,$i);
@@ -128,6 +132,7 @@ stampafile($indice,$i);
 		
 				        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i++;
 stampafile($indice,$i);
@@ -140,6 +145,7 @@ stampafile($indice,$i);
 		
 				        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i++;
 stampafile($indice,$i);
@@ -174,6 +180,7 @@ stampafile($indice,$i);
       <div class="row row-cols-5 row-cols-sm-5 row-cols-md-5 g-3">
         <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i++;
 stampafile($indice,$i);
@@ -187,6 +194,7 @@ stampafile($indice,$i);
 		
 		        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i++;
 stampafile($indice,$i);
@@ -200,6 +208,7 @@ stampafile($indice,$i);
 		
 		        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i++;
 stampafile($indice,$i);
@@ -213,6 +222,7 @@ stampafile($indice,$i);
 		
 				        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i++;
 stampafile($indice,$i);
@@ -226,6 +236,7 @@ stampafile($indice,$i);
 		
 				        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i++;
 stampafile($indice,$i);
@@ -271,7 +282,7 @@ stampafile($indice,$i);
  
  
   <div class="box">
- <button type="button" class="deposito"><h3><span style="float:left;margin-left:35px;">Avvisi</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
+ <button type="button" class="deposito" onclick="btndeposito()"><h3 class="tdp1" id="tdp"><span style="float:left;margin-left:35px;">Avvisi</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
  
  
  
@@ -292,6 +303,7 @@ stampafile($indice,$i);
       <div class="row row-cols-5 row-cols-sm-5 row-cols-md-5 g-3">
         <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $indice2=2;
 $i2=2;
@@ -305,6 +317,7 @@ stampafile($indice2,$i2);
 		
 		        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i2++;
 stampafile($indice2,$i2);
@@ -319,6 +332,7 @@ stampafile($indice2,$i2);
 		
 		        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i2++;
 stampafile($indice2,$i2);
@@ -331,6 +345,7 @@ stampafile($indice2,$i2);
 		
 				        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i2++;
 stampafile($indice2,$i2);
@@ -343,6 +358,7 @@ stampafile($indice2,$i2);
 		
 				        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i2++;
 stampafile($indice2,$i2);
@@ -377,6 +393,7 @@ stampafile($indice2,$i2);
       <div class="row row-cols-5 row-cols-sm-5 row-cols-md-5 g-3">
         <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i2++;
 stampafile($indice2,$i2);
@@ -390,6 +407,7 @@ stampafile($indice2,$i2);
 		
 		        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i2++;
 stampafile($indice2,$i2);
@@ -403,6 +421,7 @@ stampafile($indice2,$i2);
 		
 		        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i2++;
 stampafile($indice2,$i2);
@@ -416,6 +435,7 @@ stampafile($indice2,$i2);
 		
 				        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i2++;
 stampafile($indice2,$i2);
@@ -429,6 +449,7 @@ stampafile($indice2,$i2);
 		
 				        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i2++;
 stampafile($indice2,$i2);
@@ -493,6 +514,7 @@ stampafile($indice2,$i2);
       <div class="row row-cols-5 row-cols-sm-5 row-cols-md-5 g-3">
         <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $indice3=3;
 $i3=2;
@@ -506,6 +528,7 @@ stampafile($indice3,$i3);
 		
 		        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i3++;
 stampafile($indice3,$i3);
@@ -519,6 +542,7 @@ stampafile($indice3,$i3);
 		
 		        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i3++;
 stampafile($indice3,$i3);
@@ -532,6 +556,7 @@ stampafile($indice3,$i3);
 		
 				        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i3++;
 stampafile($indice3,$i3);
@@ -545,6 +570,7 @@ stampafile($indice3,$i3);
 		
 				        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i3++;
 stampafile($indice3,$i3);
@@ -580,6 +606,7 @@ stampafile($indice3,$i3);
       <div class="row row-cols-5 row-cols-sm-5 row-cols-md-5 g-3">
         <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i3++;
 stampafile($indice3,$i3);
@@ -594,6 +621,7 @@ stampafile($indice3,$i3);
 		
 		        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i3++;
 stampafile($indice3,$i3);
@@ -608,6 +636,7 @@ stampafile($indice3,$i3);
 		
 		        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i3++;
 stampafile($indice3,$i3);
@@ -622,6 +651,7 @@ stampafile($indice3,$i3);
 		
 				        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i3++;
 stampafile($indice3,$i3);
@@ -636,6 +666,7 @@ stampafile($indice3,$i3);
 		
 				        <div class="col">
           <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
 <?php 
 $i3++;
 stampafile($indice3,$i3);
