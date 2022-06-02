@@ -73,8 +73,8 @@
 
 
  <div class="box">
- <button type="button" class="deposito"><h3><span style="float:left;margin-left:35px;">Modulistica</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
- <div class="boxdeposito">
+ <button type="button" class="deposito" onclick="btndeposito(1)"><h3  class="tdp" id="tdp1"><span style="float:left;margin-left:35px;">Modulistica</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
+ <div class="boxdeposito" id="boxd1">
  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" style="width:100%;">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -282,11 +282,11 @@ stampafile($indice,$i);
  
  
   <div class="box">
- <button type="button" class="deposito" onclick="btndeposito()"><h3 class="tdp1" id="tdp"><span style="float:left;margin-left:35px;">Avvisi</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
+ <button type="button" class="deposito" onclick="btndeposito(2)"><h3 class="tdp" id="tdp2"><span style="float:left;margin-left:35px;">Avvisi</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
  
  
  
-  <div class="boxdeposito">
+  <div class="boxdeposito" id="boxd2">
  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" style="width:100%;">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -495,9 +495,9 @@ stampafile($indice2,$i2);
  
  
  <div class="box">
- <button type="button" class="deposito"><h3><span style="float:left;margin-left:35px;">Regolamenti</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
+ <button type="button" class="deposito" onclick="btndeposito(3)"><h3 class="tdp" id="tdp3"><span style="float:left;margin-left:35px;">Regolamenti</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
  
-  <div class="boxdeposito">
+  <div class="boxdeposito" id="boxd3">
  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" style="width:100%;">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

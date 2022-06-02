@@ -2,16 +2,18 @@
 
 
 
-function btndeposito()
+function btndeposito(i)
 {
-	document.getElementById("tdp").style.color="#009EE0";
-	var classe=document.getElementById("tdp").getAttribute("class");
-	if(classe=="tdp1")
+	var classe=document.getElementById("tdp"+i).getAttribute("class");
+	console.log(classe);
+	if(classe=="tdp")
 	{
-		document.getElementById("tdp").setAttribute("class", "titolodeposito");
+		document.getElementById("tdp"+i).setAttribute("class", "titolodeposito");
+		document.getElementById("boxd"+i).style.display = "block"; 
 	}
-	else if(classe=="titolodeposito")
+	else
 	{
-		document.getElementById("tdp").setAttribute("class", "tdp1");
+		document.getElementById("tdp"+i).setAttribute("class", "tdp");	
+		document.getElementById("boxd"+i).style.display = "none"; 
 	}
 }
