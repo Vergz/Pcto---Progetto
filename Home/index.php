@@ -75,7 +75,7 @@
  <div class="box">
  <button type="button" class="deposito" onclick="btndeposito(1)"><h3  class="tdp" id="tdp1"><span style="float:left;margin-left:35px;">Modulistica</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
  <div class="boxdeposito" id="boxd1">
- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" style="width:100%;">
+ <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" style="width:100%;">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -97,9 +97,7 @@ $indice=1;
 $i=2;
 stampafile($indice,$i);
 ?>
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -111,9 +109,7 @@ $i++;
 stampafile($indice,$i);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -124,22 +120,7 @@ stampafile($indice,$i);
 $i++;
 stampafile($indice,$i);
 ?>
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
-          </div>
-        </div>
-		
-				        <div class="col">
-          <div class="card shadow-sm">
-<img src="images/iconafile.png" class="iconafile">
-<?php 
-$i++;
-stampafile($indice,$i);
-?>
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -151,9 +132,18 @@ $i++;
 stampafile($indice,$i);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+          </div>
+        </div>
+		
+				        <div class="col">
+          <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
+<?php 
+$i++;
+stampafile($indice,$i);
+?>
+
+
           </div>
         </div>
 		
@@ -186,9 +176,7 @@ $i++;
 stampafile($indice,$i);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -200,9 +188,7 @@ $i++;
 stampafile($indice,$i);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -214,9 +200,7 @@ $i++;
 stampafile($indice,$i);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -228,9 +212,7 @@ $i++;
 stampafile($indice,$i);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -242,9 +224,7 @@ $i++;
 stampafile($indice,$i);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -267,11 +247,11 @@ stampafile($indice,$i);
 	
 	
 
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" style="color:#A0A0A0;" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
@@ -287,7 +267,7 @@ stampafile($indice,$i);
  
  
   <div class="boxdeposito" id="boxd2">
- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" style="width:100%;">
+ <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" style="width:100%;">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -309,9 +289,7 @@ $indice2=2;
 $i2=2;
 stampafile($indice2,$i2);
 ?>
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -324,9 +302,7 @@ stampafile($indice2,$i2);
 ?>
 
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -337,22 +313,7 @@ stampafile($indice2,$i2);
 $i2++;
 stampafile($indice2,$i2);
 ?>
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
-          </div>
-        </div>
-		
-				        <div class="col">
-          <div class="card shadow-sm">
-<img src="images/iconafile.png" class="iconafile">
-<?php 
-$i2++;
-stampafile($indice2,$i2);
-?>
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -364,9 +325,18 @@ $i2++;
 stampafile($indice2,$i2);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+          </div>
+        </div>
+		
+				        <div class="col">
+          <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
+<?php 
+$i2++;
+stampafile($indice2,$i2);
+?>
+
+
           </div>
         </div>
 		
@@ -399,9 +369,7 @@ $i2++;
 stampafile($indice2,$i2);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -413,9 +381,7 @@ $i2++;
 stampafile($indice2,$i2);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -427,9 +393,7 @@ $i2++;
 stampafile($indice2,$i2);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -441,9 +405,7 @@ $i2++;
 stampafile($indice2,$i2);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -455,9 +417,7 @@ $i2++;
 stampafile($indice2,$i2);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -480,11 +440,11 @@ stampafile($indice2,$i2);
 	
 	
 
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
@@ -498,7 +458,7 @@ stampafile($indice2,$i2);
  <button type="button" class="deposito" onclick="btndeposito(3)"><h3 class="tdp" id="tdp3"><span style="float:left;margin-left:35px;">Regolamenti</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
  
   <div class="boxdeposito" id="boxd3">
- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" style="width:100%;">
+ <div id="carouselExampleCaptions3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" style="width:100%;">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -520,9 +480,7 @@ $indice3=3;
 $i3=2;
 stampafile($indice3,$i3);
 ?>
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -534,9 +492,7 @@ $i3++;
 stampafile($indice3,$i3);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -548,23 +504,6 @@ $i3++;
 stampafile($indice3,$i3);
 ?>
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
-          </div>
-        </div>
-		
-				        <div class="col">
-          <div class="card shadow-sm">
-<img src="images/iconafile.png" class="iconafile">
-<?php 
-$i3++;
-stampafile($indice3,$i3);
-?>
-
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
           </div>
         </div>
 		
@@ -577,9 +516,19 @@ stampafile($indice3,$i3);
 ?>
 
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+          </div>
+        </div>
+		
+				        <div class="col">
+          <div class="card shadow-sm">
+<img src="images/iconafile.png" class="iconafile">
+<?php 
+$i3++;
+stampafile($indice3,$i3);
+?>
+
+
+
           </div>
         </div>
 		
@@ -613,9 +562,7 @@ stampafile($indice3,$i3);
 ?>
 
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -628,9 +575,7 @@ stampafile($indice3,$i3);
 ?>
 
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -643,9 +588,7 @@ stampafile($indice3,$i3);
 ?>
 
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -658,9 +601,7 @@ stampafile($indice3,$i3);
 ?>
 
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -673,9 +614,7 @@ stampafile($indice3,$i3);
 ?>
 
 
-            <div class="card-body">
-              <p class="card-text">File</p>
-            </div>
+
           </div>
         </div>
 		
@@ -698,11 +637,11 @@ stampafile($indice3,$i3);
 	
 	
 
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>

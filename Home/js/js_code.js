@@ -5,7 +5,6 @@
 function btndeposito(i)
 {
 	var classe=document.getElementById("tdp"+i).getAttribute("class");
-	console.log(classe);
 	if(classe=="tdp")
 	{
 		document.getElementById("tdp"+i).setAttribute("class", "titolodeposito");
