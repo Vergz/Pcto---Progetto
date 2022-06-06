@@ -8,8 +8,8 @@ require "checkFile.inc";
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/home.css" rel='stylesheet' type='text/css' title="menù orizzontale">
+  <link href="bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="js/js_code.js" type="text/javascript"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
@@ -75,12 +75,6 @@ require "checkFile.inc";
   </div>
   <p>-</p>
 
-
-
-
-
-
-
   <?php
   $ar = array();
   $j = 0;
@@ -91,11 +85,12 @@ require "checkFile.inc";
   echo '<br/><br/>';
   for ($i = 0; $i < count($files); $i++)
     if ($files[$i] != "." && $files[$i] != "..")
-      if (!is_dir($path . "/" . $files[$i])) {
+      if (!is_dir($path . "/" . $files[$i]) && !$isFile) {
         $isFile = true;
         echo '<div class="box">
-					<button type="button" class="deposito" onclick="btndeposito(' . $k . ')"><h3  class="tdp" id="tdp' . $k . '"><span style="float:left;margin-left:35px;">' . $path . '</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
-					<div class="boxdeposito" id="boxd' . $k . '">
+        <form name="f1" class="aggiungiFile"><button type="button" class="deposito" onclick="btndeposito(' . $k . ')"><h3  class="tdp" id="tdp' . $k . '"><span style="float:left;margin-left:35px;">' . $path . '</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
+					<button type="submit" class="btn btn-primary btn-lg">+</button></form>
+          <div class="boxdeposito" id="boxd' . $k . '">
 					<div id="carouselExampleCaptions' . $k . '" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" style="width:100%;">
 					<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -132,8 +127,7 @@ require "checkFile.inc";
     }
   }
   if ($isFile)
-    for ($i = 0; $i < $k; $i++)
-      echo '</div></div></div></div></div></div>
+    echo '</div></div></div></div></div></div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Previous</span>
@@ -167,16 +161,19 @@ require "checkFile.inc";
   <script>
     const myForm = document.getElementById('myForm');
     const inpFile = document.getElementById('inpFile');
-    console.log(myForm);
-    console.log(inpFile);
+    //console.log(myForm);
+    //console.log(inpFile);
 
     myForm.addEventListener("submit", e => {
       e.preventDefault();
-
+      <?php
+      $_SESSION["path"] = "upload/";
+      ?>
       const endpoint = "upload.php";
       const formData = new FormData();
 
       formData.append("inpFile", inpFile.files[0]);
+      console.log(formData);
 
       fetch(endpoint, {
         method: "post",
@@ -189,6 +186,27 @@ require "checkFile.inc";
         window.location.reload();
       }, 250);
     }
+
+    /*aggiungiFile = document.getElementsByClassName("aggiungiFile");
+
+    nome = document.getElementsByName("nome");
+    c = document.getElementsByClassName("aggiungiFile").length;
+    console.log(c);
+    for (i = 0; i < c; i++)
+      aggiungiFile[i].addEventListener("submit", e => {
+        e.preventDefault();
+
+        for (k = 1; k <= c; k++) {
+          console.log(i+" "+k);
+          if (aggiungiFile[i] === nome[k]) {
+            //console.log(k);
+            <?php
+            $_SESSION["path"] = "upload/";
+            ?>
+            window.location.replace("carica.php");
+          }
+        }
+      });*/
   </script>
 </body>
 

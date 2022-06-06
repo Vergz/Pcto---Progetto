@@ -2,7 +2,8 @@
     $cont = 2;
     function controllo($path,$dir,$cont){
         echo '<div class="box">
-				<button type="button" class="deposito" onclick="btndeposito('.$cont.')"><h3  class="tdp" id="tdp'.$cont.'"><span style="float:left;margin-left:35px;">'.$dir.'</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
+				<form name="f'.$cont.'" class="aggiungiFile"><button type="button" class="deposito" onclick="btndeposito('.$cont.')"><h3  class="tdp" id="tdp'.$cont.'"><span style="float:left;margin-left:35px;">'.$dir.'</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
+				<button type="submit" class="btn btn-primary btn-lg">+</button></form>
 				<div class="boxdeposito" id="boxd'.$cont.'">
 				<div id="carouselExampleCaptions'.$cont.'" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" style="width:100%;">
 				<div class="carousel-indicators">
