@@ -208,6 +208,71 @@ require "checkFile.inc";
         }
       });*/
   </script>
+  <?php 
+	/*
+		d giorno
+		m mese
+		Y anno
+		l giorno settimana
+
+	$mydate=array("",date("l"),date("m"),date("m"),date("d"),date("Y"));
+	echo "$mydate[1], $mydate[2], $mydate[3],$mydate[4], $mydate[5]";
+	$settimana = array("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday");
+	$mesi = array("January","February","March","April","May","June","July","August","September","October","November","December");
+	$x=0;
+	$i=0;
+	while($x==0)
+	{
+		if(strcmp($mydate[1],$settimana[$i])==0)
+		{
+			$x=1;
+		}
+		$i++;
+	}
+	$x=$mydate[4];
+
+	$z=cal_days_in_month(CAL_GREGORIAN, $mydate[2], $mydate[5]);
+	/*do
+	{
+	$x=$x-7;	
+	}while($x<=7);
+
+
+	do
+	{
+	if($x>1)
+	{
+	$x--;   //g
+	$i--;	//settg
+	}	
+	}while($i!=1);
+
+	echo "<table>
+	<tr>
+		<td>Lunedì</td>
+		<td>Martedì</td>
+		<td>Mercoledì</td>
+		<td>Giovedì</td>
+		<td>Venerdì</td>
+		<td>Sabato</td>
+		<td>Domenica</td>
+	</tr>
+	<tr>";
+
+
+	for($y=0;$y!=$i;$y++)
+	{
+		echo "<td></td>";	
+	}
+	$x=0;
+	for($y=0;$y!=$z;$y++)
+	{
+		echo "<td>".$x."</td>";	
+	}
+	echo "</tr></table>";
+	*/
+?>
+
 </body>
 
 </html>
