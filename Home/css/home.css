@@ -27,6 +27,10 @@ margin-left:190px;
 	margin-bottom:100px;
 }
 
+.card{
+	min-width: 132.2px;
+}
+
 .imgslide
 {
 	width:670px;
