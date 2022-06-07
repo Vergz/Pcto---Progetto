@@ -35,6 +35,20 @@
 
 }
 
+.calendario
+{
+	border-radius: 10px;
+	background-color: #F2F2F2;
+	width:30%;
+	height:30%;
+}
+
+tr, td {
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
 .deposito {
 	width: 1000px;
 	border-radius: 10px;
