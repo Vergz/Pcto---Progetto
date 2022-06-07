@@ -71,75 +71,25 @@ require "checkFile.inc";
     </div>
   </div>
 
-  <?php
-  $mydate = array("", date("l"), date("m"), date("m"), date("d"), date("Y"));
-  $settimana = array("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
-  $x = 0;
-  $i = 0;
-  $cont = 0;
-  while ($x == 0) {
-    if (strcmp($mydate[1], $settimana[$i]) == 0) {
-      $x = 1;
-    }
-    $i++;
-  }
-  $x = $mydate[4];
-  $z = cal_days_in_month(CAL_GREGORIAN, $mydate[2], $mydate[5]);
+ 
+<?php 
+echo "<div>";
+calendario();
 
-  while ($i != 1) {
-    if ($x > 1) {
-      $x--;
-      $i--;
-    }
-  }
-
-  for ($y = 0; $y != $x; $y++) {
-    $i--;
-  }
-  $x = abs($i);
-  $y = $x / 7;
-  $x = $x - (7 * floor($y));
-  $x = 7 - $x;
-  echo "<table class='calendario'>
-		<tr>
-			<td>Lunedì</td>
-			<td>Martedì</td>
-			<td>Mercoledì</td>
-			<td>Giovedì</td>
-			<td>Venerdì</td>
-			<td>Sabato</td>
-			<td>Domenica</td>
-		</tr>
-		<tr>";
-  if ($x != 7) {
-    for ($y = 0; $y != $x; $y++) {
-      echo "<td></td>";
-      $cont++;
-    }
-  }
-
-  $x = 0;
-  $f = $cont;
-  for ($y = 0; $y != $z; $y++) {
-    $x++;
-    echo "<td>" . $x . "</td>";
-    $cont++;
-    if ($cont % 7 == 0 && $cont != $z) {
-      echo "</tr><tr>";
-    }
-    if ($cont == $z + $f) {
-      echo "</tr>";
-    }
-  }
-  echo "</table>";
-
-  ?>
+echo "<button type='submit' class='btn btn-primary btn-lg' name='caricacalendario'>+ Aggiungi Evento</button></div>";
+?>
+ 
+ 
+ 
+ 
+ 
+ 
 
   <div style="width:1080px;height:500px;">
   </div>
   <p>-</p>
 
-  <?php
+<?php
   $ar = array();
   $j = 0;
   $k = 1;
@@ -232,7 +182,7 @@ require "checkFile.inc";
     echo "<script>window.history.pushState('', '', 'index.php');</script>";
     echo "<script>window.location.reload();</script>";
   }
-  ?>
+?>
 </body>
 
 </html>

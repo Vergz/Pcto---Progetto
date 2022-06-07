@@ -13,3 +13,10 @@ function btndeposito(i) {
 		document.getElementById("boxd" + i).style.display = "none";
 	}
 }
+
+function btncalendario(i) {
+	var classe = document.getElementById("bcl" + i).getAttribute("class");
+	if (classe == "btncalendariobase") {
+		document.getElementById("bcl" + i).setAttribute("class", "btncalendario");
+	}
+}
