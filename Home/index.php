@@ -71,42 +71,36 @@ require "checkFile.inc";
     </div>
   </div>
 
+  <?php
+  $mydate = array("", date("l"), date("m"), date("m"), date("d"), date("Y"));
+  $settimana = array("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
+  $x = 0;
+  $i = 0;
+  $cont = 0;
+  while ($x == 0) {
+    if (strcmp($mydate[1], $settimana[$i]) == 0) {
+      $x = 1;
+    }
+    $i++;
+  }
+  $x = $mydate[4];
+  $z = cal_days_in_month(CAL_GREGORIAN, $mydate[2], $mydate[5]);
 
-  <?php 
-	$mydate=array("",date("l"),date("m"),date("m"),date("d"),date("Y"));
-	$settimana = array("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday");
-	$x=0;
-	$i=0;
-	$cont=0;
-		while($x==0)
-		{
-			if(strcmp($mydate[1],$settimana[$i])==0)
-			{
-				$x=1;
-			}
-			$i++;
-		}
-	$x=$mydate[4];
-	$z=cal_days_in_month(CAL_GREGORIAN, $mydate[2], $mydate[5]);
+  while ($i != 1) {
+    if ($x > 1) {
+      $x--;
+      $i--;
+    }
+  }
 
-		while($i!=1)
-		{
-			if($x>1)
-			{
-				$x--;   
-				$i--;	
-			}	
-		}
-	
-		for($y=0;$y!=$x;$y++)
-		{
-			$i--;	
-		}
-	$x=abs($i);
-	$y=$x/7;
-    $x=$x-(7*floor($y));
-	$x=7-$x;
-		echo "<table class='calendario'>
+  for ($y = 0; $y != $x; $y++) {
+    $i--;
+  }
+  $x = abs($i);
+  $y = $x / 7;
+  $x = $x - (7 * floor($y));
+  $x = 7 - $x;
+  echo "<table class='calendario'>
 		<tr>
 			<td>Lunedì</td>
 			<td>Martedì</td>
@@ -117,45 +111,29 @@ require "checkFile.inc";
 			<td>Domenica</td>
 		</tr>
 		<tr>";
-    if($x!=7)
-	{
-		for($y=0;$y!=$x;$y++)
-		{
-			echo "<td></td>";
-			$cont++;		
-		}
-	}
-	
-	$x=0;
-	$f=$cont;
-	for($y=0;$y!=$z;$y++)
-	{
-		$x++;
-		echo "<td>".$x."</td>";	
-		$cont++;
-			if($cont%7==0&&$cont!=$z)
-			{
-			echo "</tr><tr>";	
-			}
-			if($cont==$z+$f)
-			{
-				echo "</tr>";
-			}
-	}
-	echo "</table>";
+  if ($x != 7) {
+    for ($y = 0; $y != $x; $y++) {
+      echo "<td></td>";
+      $cont++;
+    }
+  }
 
-?>
+  $x = 0;
+  $f = $cont;
+  for ($y = 0; $y != $z; $y++) {
+    $x++;
+    echo "<td>" . $x . "</td>";
+    $cont++;
+    if ($cont % 7 == 0 && $cont != $z) {
+      echo "</tr><tr>";
+    }
+    if ($cont == $z + $f) {
+      echo "</tr>";
+    }
+  }
+  echo "</table>";
 
-
-
-
-
-
-
-
-
-
-
+  ?>
 
   <div style="width:1080px;height:500px;">
   </div>
@@ -168,14 +146,29 @@ require "checkFile.inc";
   $path = "upload";
   $files = scandir($path);
   $isFile = false;
+  if (!isset($_SESSION["paths"]))
+    $_SESSION["paths"] = array();
+  if (!isset($_SESSION["cont"]))
+    $_SESSION["cont"] = 0;
+
+  for ($i = 0; $i <= $_SESSION["cont"]; $i++) {
+    if (isset($_POST["n" . $i])) {
+      $_SESSION["path"] = $_SESSION["paths"][$i];
+      header("location: carica.php");
+    }
+  }
+
+  $_SESSION["cont"] = 0;
+  $_SESSION["paths"] = array();
+
   echo '<br/><br/>';
-  for ($i = 0; $i < count($files); $i++)
+  for ($i = 0; $i < count($files); $i++) {
     if ($files[$i] != "." && $files[$i] != "..")
       if (!is_dir($path . "/" . $files[$i]) && !$isFile) {
         $isFile = true;
         echo '<div class="box">
-        <form name="f1" class="aggiungiFile"><button type="button" class="deposito" onclick="btndeposito(' . $k . ')"><h3  class="tdp" id="tdp' . $k . '"><span style="float:left;margin-left:35px;">' . $path . '</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
-					<button type="submit" class="btn btn-primary btn-lg">+</button></form>
+        <form method="POST"  class="aggiungiFile"><button type="button" class="deposito" onclick="btndeposito(' . $k . ')"><h3  class="tdp" id="tdp' . $k . '"><span style="float:left;margin-left:35px;">' . $path . '</span> <span style="float:right;margin-right:30px;">▽</span></h3></button> 
+					<button type="submit" name="n0" class="btn btn-primary btn-lg">+</button></form>
           <div class="boxdeposito" id="boxd' . $k . '">
 					<div id="carouselExampleCaptions' . $k . '" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" style="width:100%;">
 					<div class="carousel-indicators">
@@ -190,9 +183,14 @@ require "checkFile.inc";
 					<div class="album py-5 w-100 d-flex justify-content-center">
 					<div class="container" style="margin-left: 100px;margin-right: 100px;text-align:center;">
 			
-				   <div class="row row-cols-5 row-cols-sm-5 row-cols-md-5 g-3">';
+				  <div class="row row-cols-5 row-cols-sm-5 row-cols-md-5 g-3">';
         $k++;
       }
+  }
+
+  $_SESSION["paths"][0] = $path . "/";
+  //echo "A: " . $_SESSION["path"][0] . "<br/>";
+
   // Funzione ricorsiva per stampare i file
   for ($i = 0; $i < count($files); $i++) {
     if ($files[$i] != "." && $files[$i] != "..") {
@@ -235,66 +233,6 @@ require "checkFile.inc";
     echo "<script>window.location.reload();</script>";
   }
   ?>
-
-
-  <div id="upload">
-    <form class="form" id="myForm">
-      <input type="file" id="inpFile"><br />
-      <button type="submit" id="carica" onclick="ricarica()" class="btn btn-primary btn-lg">Carica file</button>
-    </form>
-  </div>
-
-  <script>
-    const myForm = document.getElementById('myForm');
-    const inpFile = document.getElementById('inpFile');
-    //console.log(myForm);
-    //console.log(inpFile);
-
-    myForm.addEventListener("submit", e => {
-      e.preventDefault();
-      <?php
-      $_SESSION["path"] = "upload/";
-      ?>
-      const endpoint = "upload.php";
-      const formData = new FormData();
-
-      formData.append("inpFile", inpFile.files[0]);
-      console.log(formData);
-
-      fetch(endpoint, {
-        method: "post",
-        body: formData
-      }).catch(console.error);
-    });
-
-    function ricarica() {
-      setTimeout(() => {
-        window.location.reload();
-      }, 250);
-    }
-
-    /*aggiungiFile = document.getElementsByClassName("aggiungiFile");
-
-    nome = document.getElementsByName("nome");
-    c = document.getElementsByClassName("aggiungiFile").length;
-    console.log(c);
-    for (i = 0; i < c; i++)
-      aggiungiFile[i].addEventListener("submit", e => {
-        e.preventDefault();
-
-        for (k = 1; k <= c; k++) {
-          console.log(i+" "+k);
-          if (aggiungiFile[i] === nome[k]) {
-            //console.log(k);
-            <?php
-            $_SESSION["path"] = "upload/";
-            ?>
-            window.location.replace("carica.php");
-          }
-        }
-      });*/
-  </script>
-
 </body>
 
 </html>
