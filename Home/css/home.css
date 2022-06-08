@@ -35,47 +35,45 @@
 
 }
 
-.calendario
-{
+.calendario {
 	border-radius: 10px;
 	background-color: #F2F2F2;
-	width:30%;
-	height:30%;
-	float:right;
+	width: 30%;
+	height: 30%;
+	float: right;
 }
 
 
-tr, td {
-  text-align: center;
-  padding: 15px;
-  border-bottom: 1px solid #ddd;
+tr,
+td {
+	text-align: center;
+	padding: 15px;
+	border-bottom: 1px solid #ddd;
 }
 
-.btncalendario
-{
-   background-color: transparent;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
+.btncalendario {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
 	border-radius: 100%;
-	width:35px;
-	height:35px;
+	width: 35px;
+	height: 35px;
 	border-style: solid;
 	border-width: 2px;
-	border-color: #B5B5B5;	
+	border-color: #B5B5B5;
 }
 
-.btncalendariobase
-{
+.btncalendariobase {
 	background-color: transparent;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-	width:35px;
-	height:35px;
-	border:none;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+	width: 35px;
+	height: 35px;
+	border: none;
 }
 
 .deposito {
@@ -142,7 +140,7 @@ tr, td {
 	height: 150px;
 	border-style: solid;
 	padding: 20px;
-	margin: 20px;
+	margin-left: 50%;
 }
 
 #carica {

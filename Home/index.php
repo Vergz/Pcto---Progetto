@@ -104,7 +104,8 @@ echo "<button type='submit' class='btn btn-primary btn-lg' name='caricacalendari
   for ($i = 0; $i <= $_SESSION["cont"]; $i++) {
     if (isset($_POST["n" . $i])) {
       $_SESSION["path"] = $_SESSION["paths"][$i];
-      header("location: carica.php");
+      //header("location: carica.php");
+      echo '<script>window.location.replace("carica.php");</script>';
     }
   }
 
